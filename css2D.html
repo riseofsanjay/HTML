@@ -1,0 +1,53 @@
+<style type="text/css">
+.container {
+margin-left:50px;
+margin-top:10px;
+}
+
+.square{
+height:80px;
+width:80px;
+margin:10px;
+}
+.square1{
+
+background-color:red;
+transition:transform 10s ease;
+}
+
+.square2{
+
+background-color:green;
+transition:transform 13s ease-in;
+}
+
+.square3{
+background-color:cyan;
+transition:transform 1s ease-out;
+}
+
+.square4{
+      background-color:purple;
+transition:transform 1s ease-in-out; 
+}
+
+.square5{
+background-color:orange;
+transition:transform 1s linear;
+}
+
+.container:hover .square{
+transform:translateX(800px);
+}
+</style>
+
+<html>
+<body bgcolor=black>
+<div class="container">
+<div class="square square1"></div>
+<div class="square square2"></div>
+<div class="square square3"></div>
+<div class="square square4"></div>
+<div class="square square5"></div>
+</body>
+</html>

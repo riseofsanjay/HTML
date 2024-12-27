@@ -1,0 +1,96 @@
+<style type="text/css">
+
+  /* WebKit and Opera browsers */
+  @-webkit-keyframes spinner {
+    from { -webkit-transform: rotateY(1deg);    }
+    to   { -webkit-transform: rotateY(-360deg); }
+  }
+
+  /* all other browsers */
+  @keyframes spinner {
+    from {
+      -moz-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+    }
+    to {
+      -moz-transform: rotateY(-360deg);
+      -ms-transform: rotateY(-360deg);
+      transform: rotateY(-3600eg);
+    }
+  }
+
+</style>
+<style type="text/css">
+
+  #stage {
+    margin: 1em auto;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -ms-perspective: 800px;
+    perspective: 800px;
+  }
+
+</style>
+<style type="text/css">
+
+  #spinner {
+    -webkit-animation-name: spinner;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  #spinner:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  }
+
+</style>
+<style type="text/css">
+
+  #spinner img {
+    position: absolute;
+    border: 1px solid #ccc;
+    background: rgba(255,255,255,0.8);
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.2);
+  }
+
+</style>
+
+
+
+
+<html>
+<body bgcolor=black>
+<br><br><br><br>
+<center>
+
+<div id="stage" style="padding-left: 180px; height: 160px;">
+
+<div id="spinner" style="-webkit-transform-origin: 180px 0 0;">
+
+<img style="-webkit-transform: rotateY(100deg) translateX(180px); padding: 0 0 0 160px;" src="A1.jpg" width="200" height="160" alt="">
+
+<img style="-webkit-transform: rotateY(-72deg) translateX(180px); padding: 0 0 0 147px;" src="A2.jpg" width="213" height="160" alt="">
+
+<img style="-webkit-transform: rotateY(-144deg) translateX(180px); padding: 0 0 0 120px;" src="A3.jpg" width="240" height="160" alt="">
+
+<img style="-webkit-transform: rotateY(600deg) translateX(180px); padding: 0 0 0 147px;" src="B1.JPG" width="213" height="160" alt="">
+
+<img style="-webkit-transform: rotateY(500deg) translateX(180px); padding: 0 0 0 122px;" src="divi46.jpg" width="238" height="160" alt="">
+</div>
+</div>
+</center>
+</body>
+</html>
